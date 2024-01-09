@@ -52,11 +52,11 @@
             <form class="form-container">
                 <h2 style="padding: 2%; text-align: center">Add Item to Your Shopping List</h2>
                 <label for="foodLabelShopping"><span>Food Label</span></label>
-                <input type="text" placeholder="Enter Food Label" name="foodLabelShopping" id="foodLabelShopping" style = "width: calc(100% - 24px) !important" onclick = "showOSKeyboard()" required/>
+                <input type="text" placeholder="Enter Food Label" name="foodLabelShopping" id="foodLabelShopping" style = "width: calc(100% - 20px) !important" onclick = "showOSKeyboard()" required/>
                 <br/>
                 <label for="categoryShop"><span>Category</span></label>
                 <br/>
-                <select id="categoryShop" name="categoryShop" style = "font-size: 16px; padding: 11px; margin-top: 10px; margin-bottom: 10px ">
+                <select id="categoryShop" name="categoryShop" style = "font-size: 16px; padding: 10px; margin-top: 10px; margin-bottom: 10px; width: calc(33% + 22px) ">
                     <option value="Protein">Protein</option>
                     <option value="Dairy">Dairy</option>
                     <option value="Vegetable">Vegetable</option>
@@ -71,7 +71,7 @@
                 <br/>
                 <label for="quantityShop"><span>Quantity</span></label>
                 <br/>
-                <input type="number" placeholder="Enter Quantity" name="quantityShop" id="quantityShop" style = "width: calc(100% - 360px) !important" onclick = "showOSKeyboard()"/>
+                <input type="number" placeholder="Enter Quantity" name="quantityShop" id="quantityShop" style = "width: 33% !important" onclick = "showOSKeyboard()"/>
                 <br/>
                 <br/>
                 <button type="button" class="btn" onclick="formatToAddShoppingList(); hideOSKeyboard();">Enter</button>

@@ -506,7 +506,7 @@ button{
     padding: 0px; 
     margin: 0px; 
     background: transparent; 
-    width: calc(100% - 24px);
+    width: calc(100% - 20px);
 }
 
 /* Set a style for the submit/login button */
@@ -546,7 +546,7 @@ button{
   font-size: 30px;
   border: 2px solid #1f628e; 
   background-color: rgba(255,255,255,0.9);
-  height: 149px; 
+  height: 150px; 
   width: 182px; 
   word-wrap: break-word;
   cursor: default;
@@ -611,7 +611,7 @@ button{
 
   .kitchen-instructions {
     text-align: center;
-    padding: 5px;
+    padding: 3px;
     font-size: 1.6rem;
     cursor: default;
   }
