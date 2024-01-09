@@ -290,6 +290,11 @@ function toggleShoppingForm(){
     }
 }
 
+function closeShoppingForm(){
+    myFormShopping.className = "form-popup-shopping";
+    plus.className = "menuicon";
+}
+
 function formatToAddShoppingList(){
     var nameValue = document.getElementById("foodLabelShopping").value;
     var categoryShopValue = document.getElementById("categoryShop").value;
@@ -421,6 +426,11 @@ function toggleForm() { // opens/closes the form to enter food items to your kit
         myForm.className = "form-popup fpshow";
         plus.className = "menuicon toggled";
     } 
+}
+
+function closeForm(){
+    myForm.className = "form-popup";
+    plus.className = "menuicon";
 }
 
 function stringToNum(string){

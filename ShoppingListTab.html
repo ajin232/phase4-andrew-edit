@@ -19,7 +19,7 @@
                     <td style = "width: 5%"></td>
                     <td style = "width: 45%"><p style = "font-weight: bold !important; text-align: left !important">Shopping list</p></td>
                     <td style = "width: 30%"></td>
-                    <td style = "width: 8%" class = "menuicon" onclick="toggleShoppingForm();" id = "plus">+</td>
+                    <td style = "width: 8%" class = "menuicon" onclick="toggleShoppingForm(); closeSearch();" id = "plus">+</td>
                     <td style = "width: 8%" class = "menuicon" onclick="toggleMenu();" id = "hamburger">&#8801;</td>
                     <td style = "width: 4%"></td>
                 </tr>
@@ -38,7 +38,7 @@
                 <tr>
                     <td>
                         <ul style = "padding-left: 5%">
-                            <li class="menuitem" onclick="togglePopupSearch(); toggleMenu(); toggleShoppingForm();">Search</li>
+                            <li class="menuitem" onclick="togglePopupSearch(); toggleMenu(); closeShoppingForm();">Search</li>
                         </ul>
                     </td>
                 </tr>
