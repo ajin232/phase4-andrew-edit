@@ -257,18 +257,12 @@ button{
     padding-left: 9%;
     padding-right: 9%;
     padding-top: 15vh;
-    padding-bottom: 31vh;
+    padding-bottom: 29vh;
     z-index: 5;
     opacity: 0%;
     background-color: rgba(36,42,45, 0.25);
     transition: bottom 0.5s ease, opacity 0.5s ease;
   }
-  
-.fpsshow {
-    bottom: 9.5vh;
-    opacity: 100%;
-    transition: bottom 0.5s ease, opacity 0.5s ease;
-}
 
 /* END ANDREW'S CLASSES */
 
@@ -340,7 +334,7 @@ button{
     padding-left: 9%;
     padding-right: 9%;
     padding-top: 13vh;
-    padding-bottom: 19vh;
+    padding-bottom: 23vh;
     z-index: 5;
     opacity: 0%;
     background-color: rgba(36,42,45, 0.25);
@@ -462,6 +456,12 @@ button{
   bottom: -1vh;
   opacity: 100%;
   transition: bottom 0.5s ease, opacity 0.5s ease;
+}
+
+.fpsshow {
+    bottom: 9.5vh;
+    opacity: 100%;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
 }
 
 /* Add styles to the form container */
