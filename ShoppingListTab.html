@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopping list</title>
+        <link rel="stylesheet" href="style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--<style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        </style>-->
+        <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript" src="Functionality.js"></script>
+    </head>
+
+    <body onload = "displayAllShoppingListItems()" ontouchstart = "">
+        <div class = "navbar upper">
+            <table class = "navcont" style = "font-size: 1.85rem">
+                <tr style = "width: 100vw;">
+                    <td style = "width: 5%"></td>
+                    <td style = "width: 45%"><p style = "font-weight: bold !important; text-align: left !important">Shopping list</p></td>
+                    <td style = "width: 30%"></td>
+                    <td style = "width: 8%" class = "menuicon" onclick="toggleShoppingForm();" id = "plus">+</td>
+                    <td style = "width: 8%" class = "menuicon" onclick="toggleMenu();" id = "hamburger">&#8801;</td>
+                    <td style = "width: 4%"></td>
+                </tr>
+            </table>
+        </div>
+        <div style = "height: 9.5vh">
+            <!-- padding space -->
+        </div>
+        <div class="menu hide" id="menu">
+            <table style="width: 100% !important;">
+                <tr>
+                    <td>
+                        <br/><br/><br/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul style = "padding-left: 5%">
+                            <li class="menuitem" onclick="location.href='#putsomethinghere'">Search</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- PUT PAGE CONTENT HERE -->
+        <div style = "width: 100%">
+            <div id="resultShoppingList"></div>
+        </div>
+        <div class="form-popup-shopping" id="myFormShopping">
+            <form class="form-container">
+                <h2 style="padding: 2%; text-align: center">Add Item to Your Shopping List</h2>
+                <label for="foodLabelShopping"><span>Food Label</span></label>
+                <input type="text" placeholder="Enter Food Label" name="foodLabelShopping" id="foodLabelShopping" style = "width: calc(100% - 24px) !important" onclick = "showOSKeyboard()" required/>
+                <br/>
+                <label for="categoryShop"><span>Category</span></label>
+                <br/>
+                <select id="categoryShop" name="categoryShop" style = "font-size: 16px; padding: 11px; margin-top: 10px; margin-bottom: 10px ">
+                    <option value="Protein">Protein</option>
+                    <option value="Dairy">Dairy</option>
+                    <option value="Vegetable">Vegetable</option>
+                    <option value="Fruit">Fruit</option>
+                    <option value="Carb">Carb</option>
+                    <option value="Drink">Drink</option>
+                    <option value="Meal">Meal</option>
+                    <option value="Spice">Spice</option>
+                    <option value="Oil">Oil</option>
+                    <option value="Other" selected>Other</option>
+                    </select>
+                <br/>
+                <label for="quantityShop"><span>Quantity</span></label>
+                <br/>
+                <input type="number" placeholder="Enter Quantity" name="quantityShop" id="quantityShop" style = "width: calc(100% - 360px) !important" onclick = "showOSKeyboard()"/>
+                <br/>
+                <br/>
+                <button type="button" class="btn" onclick="formatToAddShoppingList(); hideOSKeyboard();">Enter</button>
+                <button type="button" class="btn cancel" onclick="displayAllShoppingListItems(); hideOSKeyboard();">Close</button>     
+            </form>
+        </div>
+        <div class = "oskeyboard" id = "osKeyboard"><h3 style = "color: #ffffff !important; text-decoration: underline; cursor: pointer" onclick = "hideOSKeyboard()">[Click here to close keyboard.]</h3></div>
+        <div class = "navbar lower">
+            <table class = "navcont">
+                <tr style = "width: 100vw;">
+                    <td style = "width: 5%"></td>
+                    <td class = "navitem" onclick = "location.href='index.html'"><p>Kitchen</p></td>
+                    <td class = "navitem" onclick = "location.href='RecipesTab.html'"><p>Recipes</p></td>
+                    <td class = "navitem selected"><p>Shopping</p></td>
+                    <td class = "navitem" onclick = "location.href='UserProfileTab.html'"><p>Profile</p></td>
+                    <td style = "width: 5%"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
