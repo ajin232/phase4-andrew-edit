@@ -168,6 +168,16 @@ function togglePopupNetwork() {
     }
 };
 
+function togglePopupSearch() {
+    if (popupSearch.className === "popup pshow") {
+        popupSearch.className = "popup";
+        overlaySearch.className = "overlay";
+    } else {
+        popupSearch.className = "popup pshow";
+        overlaySearch.className = "overlay oshow";
+    }
+};
+
 function toggleProfileForm() { // opens/closes the form to enter food items to your kitchen page
     if (myFormProfile.className === "form-popup-profile fpshow"){
         myFormProfile.className = "form-popup-profile";

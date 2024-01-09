@@ -38,7 +38,7 @@
                 <tr>
                     <td>
                         <ul style = "padding-left: 5%">
-                            <li class="menuitem" onclick="location.href='#putsomethinghere'">Search</li>
+                            <li class="menuitem" onclick="togglePopupSearch(); toggleMenu(); toggleShoppingForm();">Search</li>
                         </ul>
                     </td>
                 </tr>
@@ -77,6 +77,11 @@
                 <button type="button" class="btn" onclick="formatToAddShoppingList(); hideOSKeyboard();">Enter</button>
                 <button type="button" class="btn cancel" onclick="displayAllShoppingListItems(); hideOSKeyboard();">Close</button>     
             </form>
+        </div>
+        <div class="overlay" onclick="togglePopupSearch()" id="overlaySearch"></div>
+        <div class="popup" id="popupSearch">
+            <span class="close-button" onclick="togglePopupSearch()">&times;</span>
+            <h3>This feature hasn't been implemented yet.</h3>
         </div>
         <div class = "oskeyboard" id = "osKeyboard"><h3 style = "color: #ffffff !important; text-decoration: underline; cursor: pointer" onclick = "hideOSKeyboard()">[Click here to close keyboard.]</h3></div>
         <div class = "navbar lower">
