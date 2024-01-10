@@ -71,7 +71,7 @@ button{
 .upper{
     background: rgba(31,98,142,0.9); 
     top: 0px;
-    color: #f7f7f7;
+    color: #ffffff;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 }
@@ -189,7 +189,7 @@ button{
 }
 
 .toggled{
-    color: #3498db !important;
+    color: #bfcbd0 !important;
     transition: color 0.5s ease;
 }
 
@@ -408,7 +408,7 @@ button{
 
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-    background-color: #455a64;
+    background-color: #546e7a;
     color: #ffffff;
     padding: 20px 20px;
     border: none;
@@ -427,7 +427,7 @@ button{
 }
 
 .open-button:active {
-    background-color: #607d8b;
+    background-color: #78909c;
     transition: background-color 0.25s ease;
 }
 
